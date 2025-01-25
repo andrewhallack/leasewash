@@ -1,0 +1,84 @@
+.advantages {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color-2);
+    padding: 200px 0;
+}
+
+.advantages h4 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 60px;
+}
+
+.advantages .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 800px;
+}
+
+.advantages .grid .wide {
+    position: relative;
+    grid-column: span 2;
+    overflow: hidden;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(93, 149, 255, 0.4) 5px 5px, 
+                rgba(93, 149, 255, 0.3) 10px 10px, 
+                rgba(93, 149, 255, 0.2) 15px 15px, 
+                rgba(93, 149, 255, 0.1) 20px 20px, 
+                rgba(93, 149, 255, 0.05) 25px 25px;
+}
+
+.advantages .grid .narrow {
+    position: relative;
+    grid-row: span 1;
+    overflow: hidden;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(93, 149, 255, 0.4) 5px 5px, 
+                rgba(93, 149, 255, 0.3) 10px 10px, 
+                rgba(93, 149, 255, 0.2) 15px 15px, 
+                rgba(93, 149, 255, 0.1) 20px 20px, 
+                rgba(93, 149, 255, 0.05) 25px 25px;
+}
+
+.advantages .grid img {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.advantages .overlay {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    color: var(--bg-color-2);
+    z-index: 1;
+}
+
+.advantages .overlay h5 {
+    margin-bottom: 0;
+}
+
+.advantages .overlay p {
+    margin-bottom: 60px;
+}
