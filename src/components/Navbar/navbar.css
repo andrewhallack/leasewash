@@ -50,6 +50,10 @@ nav ul li {
     position: relative;
 }
 
+nav ul li a.active {
+    color: var(--text-color);
+}
+
 nav ul li a {
     color: rgba(115, 119, 128, 1);
     width: 100%;

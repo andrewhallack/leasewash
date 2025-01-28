@@ -9,21 +9,14 @@ import logo from '../../assets/fakelogo.svg'
 function Navbar() {
     const pages = {
         'Home': {
-            link: '/',
-            icon: <GrHomeRounded className='icon' />
+            link: '/#home',
         },
         'About': {
             link: '/#about',
-            icon: <GrCircleInformation className='icon' />
         },
         'Services': {
-            link: '/',
-            icon: <GrCalendar className='icon' />
+            link: '/#services',
         },
-        'Gallery': {
-            link: '/',
-            icon: <GrCamera className='icon' />
-        }
     };
 
     const location = useLocation();
@@ -42,13 +35,20 @@ function Navbar() {
     };
     
     const handleLink = (link) => {
-        setActiveLink(link)
+        setActiveLink(link);
         closeMenu();
+
+        if (link.startsWith('/#')) {
+            const id = link.replace('/#', '');
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
     };
 
     useEffect(() => {
         setActiveLink(location.pathname);
-        window.scroll(0, 0);
     }, [location]);
 
     useEffect(() => {    
@@ -67,11 +67,11 @@ function Navbar() {
         <>
             <header className='navbar'>
                 <nav ref={navRef}>
-                    <RouterLink to='/' onClick={closeMenu} className='logo'>
+                    <RouterLink to='/#home' onClick={() => handleLink('/#home')} className='logo'>
                         <img src={logo} />
                     </RouterLink>
                     <div className='button-wrapper'>
-                        <RouterLink to='/' id='mobile' className='button filled'>
+                        <RouterLink to='/#contact' id='mobile' className='button filled' onClick={() => handleLink("/#contact")}>
                             Contact Us
                         </RouterLink>
                         <div className='hamburger' onClick={handleClick}>
@@ -83,15 +83,14 @@ function Navbar() {
                             <li
                                 key={name}
                                 onClick={() => handleLink(data.link)}
-                                className={activeLink === data.link ? 'active' : ''}
                             >
-                                <RouterLink to={data.link}>
+                                <RouterLink to={data.link} className={activeLink === data.link ? 'active' : ''}>
                                     {data.icon}{name}
                                 </RouterLink>
                             </li>
                         ))}
                     </ul>
-                    <RouterLink to='/' id='fullscreen' className='button filled'>
+                    <RouterLink to='/#contact' id='fullscreen' className='button filled' onClick={() => handleLink("/#contact")}>
                         Contact Us
                     </RouterLink>
                 </nav>

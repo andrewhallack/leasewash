@@ -5,7 +5,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Contact = () => {
   return (
-    <div className='contact'>
+    <div className='contact' id='contact'>
       <div className='col'>
         <div className='text'>
           <h4>Get in Touch</h4>

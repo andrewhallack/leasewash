@@ -5,7 +5,7 @@ import img2 from '../../assets/example_pics/andrew.jpg'
 
 const Founders = () => {
   return (
-    <div className='founders'>
+    <div className='founders' id='founders'>
         <div className='top-triangle' />
         <div className='col'>
             <div className='img-container'>

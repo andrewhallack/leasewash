@@ -5,8 +5,19 @@ import img2 from '../../assets/example_pics/wash3.webp'
 import img3 from '../../assets/example_pics/wash4.webp'
 
 const About = () => {
+
+    const handleLink = (link) => {
+        if (link.startsWith('/#')) {
+            const id = link.replace('/#', '');
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    };
+
   return (
-    <div className='about'>
+    <div className='about' id="about">
         <div className='row'>
             <div className='col'>
                 <h4>
@@ -22,8 +33,8 @@ const About = () => {
                     distinctive amenity.
                 </p>
                 <div className='buttons'>
-                    <a className='button filled'>Contact Us</a>
-                    <a className='button empty'>Our Founders</a>
+                    <a className='button filled' onClick={() => handleLink("/#contact")}>Contact Us</a>
+                    <a className='button empty' onClick={() => handleLink("/#founders")}>Our Founders</a>
                 </div>
                 
             </div>

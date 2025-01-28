@@ -12,7 +12,7 @@ const HowTo = () => {
     }
 
     return (
-        <div className='howto'>
+        <div className='howto' id="services">
             <div className='col'>
                 <h4><span>How</span> it Works</h4>
                 <div className='accordion'>

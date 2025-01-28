@@ -4,7 +4,7 @@ import img2 from '../../assets/example_pics/wash2.webp'
 
 function Hero() {
   return (
-    <div className='hero'>
+    <div className='hero' id="home">
       <div className='col'>
         <h4>A <span>Clean and Shiny Amenity to Elevate</span> your Apartment Complex</h4>
         <p>
