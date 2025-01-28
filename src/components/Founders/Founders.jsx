@@ -1,7 +1,7 @@
 import './founders.css'
 
-import img1 from '../../assets/example_pics/najib.jpg'
-import img2 from '../../assets/example_pics/andrew.jpg'
+import img1 from '../../assets/example_pics/najib.png'
+import img2 from '../../assets/example_pics/andrew.png'
 
 const Founders = () => {
   return (
