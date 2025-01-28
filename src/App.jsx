@@ -7,7 +7,7 @@ import {
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
-import About from './components/About/about'
+import About from './components/About/About'
 import Founders from './components/Founders/Founders'
 import HowTo from './components/HowTo/HowTo'
 import Advantages from './components/Advantages/Advantages'
