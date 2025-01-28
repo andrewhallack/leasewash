@@ -5,6 +5,8 @@
     justify-content: center;
     background-color: var(--bg-color-2);
     column-gap: 120px;
+    position: relative;
+    overflow: hidden;
 }
 
 .founders h4 {
@@ -86,4 +88,28 @@
 .founders .wave path {
     width: 100%;
     height: auto;
+}
+
+.founders .top-triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 100vw solid transparent;
+    border-top: 15vh solid var(--bg-color-1);
+    display: inline-block;
+}
+
+.founders .bottom-triangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 100vw solid transparent;
+    border-bottom: 15vh solid var(--bg-color-1);
+    display: inline-block;
 }

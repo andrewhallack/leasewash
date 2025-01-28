@@ -9,7 +9,7 @@ const Contact = () => {
       <div className='col'>
         <div className='text'>
           <h4>Get in Touch</h4>
-          <p>If you have any questions or inquiries, do not hesitate to contact us! We respond within 24 hours and if you want to talk immediately, give us a call. We will call back within the same day if unavailable.</p>
+          <p>If you have any questions or inquiries, do not hesitate to contact us! We will respond within 24 hours and if you want to talk immediately, give us a call. We will call back within the same day if unavailable.</p>
         </div>
         <a>
           <div className='icon-wrapper'>
@@ -40,6 +40,19 @@ const Contact = () => {
         </a>
       </div>
       <div className='col'>
+        <div className='form-wrapper'>
+          <h4>Contact Us</h4>
+          <form>
+            <label for="name">NAME</label><br />
+            <input type="text" id="name" name="name" /><br />
+            <label for="email">EMAIL</label><br />
+            <input type="text" id="email" name="email" /><br />
+            <label for="phone">PHONE</label><br />
+            <input type="text" id="phone" name="phone" /><br />
+            <label for="message">MESSAGE</label><br />
+            <input type="text" id="message" name="message" /><br />
+          </form>
+        </div>
       </div>
     </div>
   )

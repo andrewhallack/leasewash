@@ -6,7 +6,7 @@ import img2 from '../../assets/example_pics/andrew.jpg'
 const Founders = () => {
   return (
     <div className='founders'>
-
+        <div className='top-triangle' />
         <div className='col'>
             <div className='img-container'>
                 <img src={img1} />
@@ -22,6 +22,7 @@ const Founders = () => {
                 Andrew got involved in this service after reflecting on his own needs. He tends to have a packed schedule, juggling a 9-to-5 job, errands, figuring out how to get his daily exercise, and managing a social life. When realizing that others go through the same, he couldn’t say no to the opportunity to get involved with Lease Wash Co. It became clear that washing a car no longer needs to be an afterthought, but something that is already taken care of.
             </p>
         </div>
+        <div className='bottom-triangle' />
     </div>
   )
 }

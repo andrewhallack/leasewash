@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--bg-color-1);
+    column-gap: 120px;
 }
 
 .contact h4 {
@@ -19,6 +20,7 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;
+    flex-grow: 1;
 }
 
 .contact .col .text {
@@ -63,3 +65,37 @@
     font-size: 16px;
 }
 
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color-2);
+    padding: var(--space-xl);
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.form-wrapper h4 {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.form-wrapper form {
+    width: 100%;
+    margin-right: var(--space-m);
+}
+
+.form-wrapper form input {
+    border: none;
+    padding: var(--space-xs);
+    margin-bottom: var(--space-s);
+    width: 100%;
+    border-radius: 8px;
+}
+
+.form-wrapper form label {
+    font-size: var(--step--1);
+    font-weight: 700;
+}
