@@ -28,7 +28,7 @@ function App() {
               <>
                 <Hero />
                 <About />
-                <Founders />
+                {/* <Founders /> */}
                 <HowTo />
                 <Advantages />
                 <Contact />

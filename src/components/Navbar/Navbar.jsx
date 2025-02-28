@@ -3,7 +3,7 @@ import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { GrHomeRounded, GrCircleInformation, GrCalendar, GrCamera } from "react-icons/gr";
 
 import './navbar.css';
-import logo from '../../assets/fakelogo.svg'
+import logo from '../../assets/example_pics/logo.png'
 
 
 function Navbar() {

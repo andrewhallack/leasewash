@@ -17,7 +17,7 @@ const Contact = () => {
           </div>
           <div className='info'>
             <h6>Phone</h6>
-            <p>(000) 000-000</p>
+            <p>(512) 423-6377</p>
           </div>
         </a>
         <a>
@@ -26,7 +26,7 @@ const Contact = () => {
           </div>
           <div className='info'>
             <h6>Email</h6>
-            <p>johndoe@mail.com</p>
+            <p>contact@leasewash.co</p>
           </div>
         </a>
         <a>
